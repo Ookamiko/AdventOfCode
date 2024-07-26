@@ -132,3 +132,13 @@ Executed in 13.393798s
 ``` 
 
 The program also display the time taken to resolve the puzzle with your solution. It's a good indicator if you need/want to improve it.
+
+# Git management
+
+The git repository contains two branch types :
+- master
+- solution/***year***
+
+On the master branch you will find the project without solution on the release tag as well as merge from branches solution/***year*** where all puzzle have been completed.
+
+To find the solutions of a specific year not merged into the master branch, refer to the specific solution/***year*** branch.
