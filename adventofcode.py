@@ -5,7 +5,6 @@ import sys
 
 import requests
 
-from datetime import datetime, timedelta
 from template.generic import get_solve_function as fct_template
 
 # Session ID. Check README file to see how to retrieve this value.
