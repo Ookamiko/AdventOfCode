@@ -27,7 +27,7 @@ def get_input(year, day):
 
     if res.status_code == 404:
         sys.exit('No input found. Are you sure to ask for a year-day available ?')
-    else res.status_code != requests.codes.ok:
+    elif res.status_code != requests.codes.ok:
         sys.exit(res.text)
 
     return res.content.decode('UTF-8')
