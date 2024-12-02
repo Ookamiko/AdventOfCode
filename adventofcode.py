@@ -6,6 +6,7 @@ import sys
 import requests
 
 from template.generic import get_solve_function as fct_template
+from year_2018.generic import get_solve_function as fct_2018
 
 # Session ID. Check README file to see how to retrieve this value.
 CONST_ID = ""
@@ -41,5 +42,8 @@ Looked at the README file to know how to set it up.
         """)
 
     fct = default
+
+    if year == '2018':
+        fct = fct_2018(day,level)
 
     return fct(input)
