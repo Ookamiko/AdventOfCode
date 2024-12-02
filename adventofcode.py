@@ -9,6 +9,7 @@ from template.generic import get_solve_function as fct_template
 from year_2015.generic import get_solve_function as fct_2015
 from year_2016.generic import get_solve_function as fct_2016
 from year_2017.generic import get_solve_function as fct_2017
+from year_2022.generic import get_solve_function as fct_2022
 
 # Session ID. Check README file to see how to retrieve this value.
 CONST_ID = ""
@@ -51,5 +52,7 @@ Looked at the README file to know how to set it up.
         fct = fct_2016(day,level)
     elif year == '2017':
         fct = fct_2017(day,level)
+    elif year == '2022':
+        fct = fct_2022(day,level)
 
     return fct(input)
