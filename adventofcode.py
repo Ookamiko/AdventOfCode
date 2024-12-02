@@ -32,7 +32,7 @@ def get_input(year, day):
 
     return res.content.decode('UTF-8')
 
-def solve(year, day, level):
+def solve(year, day, level, input):
 
     if CONST_ID == "":
         sys.exit("""
@@ -40,7 +40,6 @@ No session ID defined.
 Looked at the README file to know how to set it up.
         """)
 
-    input = get_input(year, day)
     fct = default
 
     return fct(input)

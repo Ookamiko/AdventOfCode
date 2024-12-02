@@ -21,9 +21,13 @@ year = str(sys.argv[1])
 day = str(sys.argv[2])
 level = str(sys.argv[3])
 
+print("Retrieving input for problem " + year + "-" + day + "-" + level + ".")
+
+input = adventofcode.get_input(year, day)
+
 start = datetime.datetime.now()
 print("Start execution for problem " + year + "-" + day + "-" + level + ".")
 
-print("Solution : " + str(adventofcode.solve(year, day, level)))
+print("Solution : " + str(adventofcode.solve(year, day, level, input)))
 
 print("Executed in " + str((datetime.datetime.now() - start).total_seconds()) + "s")
